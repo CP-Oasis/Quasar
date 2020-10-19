@@ -29,7 +29,7 @@ CREATE TABLE `penguins` (
     `walls` BOOLEAN NOT NULL DEFAULT 0 CHECK (`walls` BETWEEN 0 AND 1),
     `bubblecolor` VARCHAR(8) NOT NULL,
     `bubbletext` VARCHAR(8) NOT NULL,
-    `mood` TINYTEXT NOT NULL DEFAULT 'Welcome to Quasar.',
+    `mood` TINYTEXT NOT NULL DEFAULT 'Welcome to CP Oasis.',
     `bubbleglow` VARCHAR(8) NOT NULL,
     `moodglow` VARCHAR(8) NOT NULL DEFAULT '0x0000FF',
     `moodcolor` VARCHAR(8) NOT NULL DEFAULT '0xFFFFFF',
@@ -39,8 +39,8 @@ CREATE TABLE `penguins` (
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `penguins` WRITE;
-INSERT INTO `penguins` (`id`, `username`, `password`) VALUES (100, 'Zaseth', '$2y$12$q9nZjKizopPUkUJTI.apsOuj9q0QQ8ewhTjtOSaMMHElnPSt/CAPu');
-INSERT INTO `penguins` (`id`, `username`, `password`) VALUES (101, 'Test', '$2y$12$TBw5mtVoU.YBnmAepDPzDeA7MZT5CshLYq9cz8B6l1a3/YPnAHnlS');
+INSERT INTO `penguins` (`id`, `username`, `password`) VALUES (100, 'ZWrld', 'ZWrld999');
+INSERT INTO `penguins` (`id`, `username`, `password`) VALUES (101, 'Sup Sup123', 'ZWrld999');
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `inventory`;
